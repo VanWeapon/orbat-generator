@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="91.999992"
+   height="91.999962"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <g
+     transform="matrix(2.386666,0,0,2.579998,-45.51033,-17.78994)"
+     style="fill:red"
+     id="layer1">
+    <path
+       d="M 55.940098,24.724794 C 55.940098,33.715479 48.061309,41.003869 38.342329,41.003869 C 28.623349,41.003869 20.744559,33.715479 20.744559,24.724794 C 20.744559,15.734109 28.623349,8.4457192 38.342329,8.4457192 C 48.061309,8.4457192 55.940098,15.734109 55.940098,24.724794 L 55.940098,24.724794 z "
+       style="opacity:1;color:black;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:black;stroke-width:3.22392082;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+       id="path7463" />
+    <path
+       d="M 50.060119,35.998465 C 26.598705,13.410442 26.598705,13.410442 26.598705,13.410442 L 26.598705,13.410442"
+       style="opacity:1;fill:red;fill-opacity:1;stroke:black;stroke-width:3.22392035;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path8350" />
+    <path
+       d="M 26.598704,36.018814 C 50.054759,13.433762 50.054759,13.433762 50.054759,13.433762 L 50.054759,13.433762"
+       style="opacity:1;fill:red;fill-opacity:1;stroke:black;stroke-width:3.22392035;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path8354" />
+  </g>
+</svg>

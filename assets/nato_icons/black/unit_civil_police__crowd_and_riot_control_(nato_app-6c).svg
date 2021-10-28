@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="NATO Map Symbol"
+   height="400"
+   width="600"
+   version="1.1">
+  <path
+     d="m 360.3535,172.16364 c 0.94248,-11.53864 4.28827,-22.13144 10.17877,-31.83897 l -22.61613,-22.62625 c -7.14265,6.15306 -15.28164,9.55945 -24.50447,10.16196 -8.44865,0.76408 -16.45636,-0.8415 -23.9861,-4.83021 -7.74853,3.85744 -15.72594,5.46975 -24.04332,4.83021 -8.60012,-0.77081 -16.36548,-3.82041 -23.31627,-9.2262 l -22.68009,22.61613 c 5.57746,9.84891 8.68427,20.15223 9.29352,30.91333 0.28948,4.95475 -1.12424,11.7709 -4.29501,20.58981 -1.65944,4.88743 -2.91159,9.12522 -3.76992,12.66961 -0.79438,3.51747 -1.28918,6.37857 -1.45075,8.51934 -0.11781,9.39114 2.51777,17.87682 7.92019,25.41329 4.22097,5.5034 11.18185,11.5824 20.849,18.22688 10.57933,5.3856 18.76207,8.8795 24.49436,10.374 l 4.75279,2.2081 c 1.49787,0.71359 3.10009,1.41372 4.76962,2.1778 3.60498,2.1576 6.13621,4.50034 7.47588,6.92049 1.63251,-2.61538 4.22096,-4.9009 7.66774,-6.92049 2.43025,-1.0603 4.48014,-1.98258 6.13285,-2.78705 l 3.58815,-1.60221 c 1.22523,-0.60925 2.83754,-1.30601 4.77636,-2.07346 1.95564,-0.77082 4.38253,-1.71329 7.27055,-2.76348 5.58419,-1.97585 9.65705,-3.84734 12.2354,-5.53707 9.37767,-6.64448 16.23421,-12.62249 20.59317,-17.97443 5.59765,-7.56676 8.31401,-16.0861 8.18947,-25.66573 -0.33323,-4.28829 -2.1475,-11.15156 -5.44281,-20.49893 -3.14047,-9.10502 -4.534,-16.17361 -4.08295,-21.27647 z"
+     id="Badge"
+     style="fill:none;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <text
+     id="CRC"
+     style="font-style:normal;font-weight:normal;font-size:100px;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+     xml:space="preserve"
+     y="100"
+     x="295">CRC</text>
+  <path
+     id="Neutral Frame"
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created using Karbon14, part of koffice: http://www.koffice.org/karbon -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140px" height="120px">
+  <defs>
+  </defs>
+  <g id="Layer">
+    <g id="g3">
+      <g id="_x36_0_xB0__3">
+      </g>
+      <path id="Triangle" fill="none" stroke="#000000" stroke-width="4.05355" d="M70.8074 6.205L135.311 105.7L6.43925 105.785L70.8074 6.205Z"  />
+    </g>
+    <path fill="#000000" stroke="#000000" stroke-width="1.5" d="M78.3884 70.0865C78.3884 65.967 75.0418 62.6275 70.9135 62.6275C66.7852 62.6275 63.4386 65.967 63.4386 70.0865C63.4386 74.206 66.7852 77.5455 70.9135 77.5455C75.0418 77.5455 78.3884 74.206 78.3884 70.0865Z"  />
+  </g>
+</svg>

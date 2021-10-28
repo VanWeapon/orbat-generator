@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="180"
+   height="130"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <g
+     transform="matrix(2.386666,0,0,2.579998,-1.110335,-0.789951)"
+     style="fill:red"
+     id="layer1">
+    <rect
+       width="71.23011"
+       height="46.512623"
+       ry="0"
+       x="2.5596795"
+       y="2.2436907"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:black;stroke-width:4.02890635;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="GF" />
+    <rect
+       width="46.927387"
+       height="16.279081"
+       ry="8.1395407"
+       x="14.711041"
+       y="18.329445"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:black;stroke-width:3.22392154;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect7279" />
+    <path
+       d="M 27.322774,22.195193 C 49.110233,22.195193 49.110233,22.195193 49.110233,22.195193"
+       style="fill:black;fill-opacity:1;stroke:black;stroke-width:3.22392249;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path12755" />
+    <path
+       d="M 27.323114,22.195499 C 27.323114,30.810082 27.323114,30.810082 27.323114,30.810082"
+       style="fill:black;fill-opacity:1;stroke:black;stroke-width:3.22392249;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path13642" />
+    <path
+       d="M 49.110503,22.195476 C 49.110503,30.810058 49.110503,30.810058 49.110503,30.810058"
+       style="fill:black;fill-opacity:1;stroke:black;stroke-width:3.22392249;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path13646" />
+    <path
+       d="M 38.216814,22.755303 C 38.216814,30.810082 38.216814,30.810082 38.216814,30.810082"
+       style="fill:black;fill-opacity:1;stroke:black;stroke-width:3.22392249;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path13648" />
+  </g>
+</svg>

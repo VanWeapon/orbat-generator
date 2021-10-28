@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   width="600"
+   height="400"
+   id="NATO Map Symbol">
+  <path
+     id="UAV"
+     style="fill:#000000;stroke:#000000;stroke-width:1.4411906px;stroke-linecap:butt;stroke-linejoin:miter"
+     d="M 300,276 115,140 V 124.4 L 300,184 485,124.4 V 140 Z" />
+  <text
+     style="fill:#000000;font-size:100px;font-family:sans-serif;text-align:center;text-anchor:middle;stroke:none"
+     id="S1"
+     y="93"
+     x="300">TA</text>
+  <path
+     id="Sled"
+     d="m 381.07148,313.51307 c 17.32251,0 31.36345,14.04593 31.35726,31.36845 0.006,17.32252 -14.03475,31.36845 -31.35726,31.36845 l -162.14296,0.01 c -17.32632,0 -31.36883,-14.05187 -31.35725,-31.3782 -0.0116,-17.32633 14.03093,-31.3782 31.35725,-31.3782"
+     style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:round" />
+  <path
+     id="Neutral Frame"
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

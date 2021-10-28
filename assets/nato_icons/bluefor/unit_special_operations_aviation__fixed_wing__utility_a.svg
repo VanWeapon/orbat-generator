@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   width="600"
+   height="400"
+   id="NATO Map Symbol">
+  <path
+     style="fill:#0000ff;stroke:#0000ff;stroke-width:10;stroke-linejoin:miter;stroke-miterlimit:4"
+     id="Aviation"
+     d="m 394.47775,143.54479 c 33.96844,-20.29784 81.02658,25.27586 81.02658,56.45521 0,31.17935 -47.05814,76.75305 -81.02658,56.45521 L 205.52226,143.54479 c -33.96842,-20.29784 -81.0266,25.27586 -81.0266,56.45521 0,31.17935 47.05818,76.75305 81.0266,56.45521 z" />
+  <text
+     style="fill:#0000ff;font-size:100px;font-family:sans-serif;text-align:center;text-anchor:middle;stroke:none"
+     id="S1"
+     y="93"
+     x="300">SOF</text>
+  <text
+     style="font-size:100px;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#0000ff;stroke:none"
+     id="S2"
+     y="380"
+     x="300">U</text>
+  <path
+     id="Neutral Frame"
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

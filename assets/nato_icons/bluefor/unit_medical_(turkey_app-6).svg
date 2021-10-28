@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   id="NATO Map Symbol"
+   height="400"
+   width="600">
+  <path
+     id="Crescent"
+     d="m 428.88318,121.23159 a 136.96923,137.3847 0 0 1 -128.88317,91.3709 136.96923,137.3847 0 0 1 -128.88319,-91.28798 136.96923,137.3847 0 0 0 -8.08619,46.01397 136.96923,137.3847 0 0 0 136.96938,137.38485 136.96923,137.3847 0 0 0 136.96936,-137.38485 136.96923,137.3847 0 0 0 -8.08619,-46.09689 z"
+     style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="Neutral Frame"
+     style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linejoin:miter;stroke-miterlimit:4"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

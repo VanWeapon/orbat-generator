@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   id="NATO Map Symbol"
+   height="400"
+   width="600">
+  <g
+     id="SpLvl"
+	 style="fill:none;stroke:#af0000;stroke-width:10;stroke-linecap:butt">
+  <path
+     id="Theatre"
+     d="M 105,5 165,200 105,395" />
+  <path
+     id="Corps"
+     d="M 495,5 435,200 495,395" />
+  </g>
+  <g
+     id="Tpt"
+	 style="fill:none;stroke:#af0000;stroke-width:10;stroke-linecap:butt">
+    <path
+       id="Wheel"
+       d="m 383.1667,200 a 83.166707,83.143921 0 1 1 -166.3334,0 83.166707,83.143921 0 1 1 166.3334,0 z" />
+    <path
+       id="Wheel-H"
+       d="M 217,200 H 383" />
+    <path
+       id="Wheel-D1"
+       d="M 241,259 359,141" />
+    <path
+       id="Wheel-V"
+       d="M 300,117 V 283" />
+    <path
+       id="Wheel-D2"
+       d="M 241,141 359,259" />
+  </g>
+  <g
+     id="Ammo"
+     style="fill:none;stroke:#af0000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;">
+    <path
+       d="M 281.12339,96.022097 V 42.705632 c 0,-9.543303 12.28237,-23.0873 18.87661,-23.0873 6.59424,0 18.87661,13.543997 18.87661,23.0873 v 53.316465 z"
+       id="Ammo1" />
+    <path
+       d="M 266.03641,96.022097 H 333.9636"
+       id="Ammo2" />
+  </g>
+  <path
+     id="Neutral Frame"
+     style="fill:none;stroke:#af0000;stroke-width:10;stroke-linejoin:miter;stroke-miterlimit:4"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

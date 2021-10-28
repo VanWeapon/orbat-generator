@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   id="NATO Map Symbol"
+   height="400"
+   width="600">
+  <g
+     style="fill:none;stroke:#af0000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4"
+     id="RADAR">
+    <path
+       id="Dish"
+       d="m 375.567,141.70653 -34.42516,26.50129 c -24.71678,16.13747 -59.42054,15.39008 -83.50239,-1.55976 -24.27318,-16.20017 -36.56212,-47.1715 -29.7062,-74.970231 3.82328,-17.240258 23.85758,-38.371271 29.16146,-43.001434 l 13.18227,-11.507799" />
+    <path
+       id="Bolt"
+       d="m 236.33023,150.783 72.25786,-59.23538 -2.58064,36.70925 65.37616,-53.395274" />
+  </g>
+  <text
+     id="S2"
+     style="font-size:130px;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#af0000;stroke:none"
+     y="310"
+     x="300">MI</text>
+  <path
+     id="Neutral Frame"
+     style="fill:none;stroke:#af0000;stroke-width:10;stroke-linejoin:miter;stroke-miterlimit:4"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

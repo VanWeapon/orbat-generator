@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   width="600"
+   height="400"
+   id="NATO Map Symbol">
+  <path
+     id="Recce"
+	 style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt"
+     d="M 495,5 105,395" />
+  <path
+     id="UAV"
+     style="fill:#000000;stroke:#000000;stroke-width:1.4px;stroke-linecap:butt;stroke-linejoin:miter"
+     d="M 300,276 115,140 V 124.4 L 300,184 485,124.4 V 140 Z" />
+  <path
+     style="fill:#000000;stroke:none"
+     d="M 299.96746,16.250008 A 69.414315,69.412745 0 0 1 260,56.281638 69.414315,69.412745 0 0 1 300.03253,96.25 69.414315,69.412745 0 0 1 340,56.216558 69.414315,69.412745 0 0 1 299.96746,16.250008 Z"
+     id="Sensor" />
+  <text
+     style="font-size:100px;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#000000;stroke:none"
+     id="S2"
+     y="380"
+     x="300">HA</text>
+  <path
+     id="Neutral Frame"
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

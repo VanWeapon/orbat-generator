@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="600"
+   height="400"
+   id="NATO Map Symbol">
+  <path
+     d="m 383.29401,255.98 -35.71659,-37.11077 h 13.69381 c 4.02812,0 7.59129,-2.05055 9.29016,-5.35603 1.69888,-3.29727 1.14004,-7.07848 -1.46639,-9.86312 l -34.92975,-37.27482 h 12.91592 c 4.06835,0 7.73434,-2.19408 9.32592,-5.58158 1.57369,-3.33419 0.83155,-7.21382 -1.89559,-9.87543 l -49.29864,-48.17962 c -2.69584,-2.6452 -7.72541,-2.6452 -10.42572,0 l -49.30311,48.17962 c -2.72714,2.66161 -3.46481,6.54124 -1.89559,9.87543 1.59158,3.3875 5.26204,5.58158 9.33039,5.58158 h 12.91592 l -34.93422,37.28302 c -2.59749,2.78054 -3.15633,6.55765 -1.46192,9.85902 1.69887,3.30138 5.25756,5.35193 9.29016,5.35193 h 13.69381 L 216.70599,255.98 c -2.68243,2.78464 -3.29045,6.59866 -1.59157,9.94925 1.67652,3.30138 5.36486,5.43394 9.39298,5.43394 h 57.61419 c 0,0 -16.0533,29.50357 0,27.89153 h 35.75682 c 14.89149,2.57169 0,-27.89153 0,-27.89153 h 57.61419 c 4.02812,0 7.71646,-2.13256 9.39298,-5.43394 1.69888,-3.35059 1.09086,-7.16461 -1.59157,-9.94925 z"
+     id="ENVIR"
+     style="fill:none;stroke:#af0000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="Neutral Frame"
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#af0000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   id="NATO Map Symbol"
+   height="400"
+   width="600">
+  <g
+     id="SpLvl"
+	 style="fill:none;stroke:#af0000;stroke-width:10;stroke-linecap:butt">
+  <path
+     id="Corps"
+     d="M 495,5 435,200 495,395" />
+  </g>
+  <path
+     style="fill:none;stroke:#af0000;stroke-width:10;stroke-linecap:butt"
+     d="M 105,303.79177 H 465"
+     id="Supply" />
+  <g
+     id="MEI"
+	 style="fill:#af0000;stroke:#af0000;stroke-width:10;stroke-linecap:butt">
+    <path
+       d="m 235.14449,203.92941 a 35.562946,35.562946 0 0 1 -35.56294,35.56295 35.562946,35.562946 0 0 1 -35.56295,-35.56295 35.562946,35.562946 0 0 1 35.56295,-35.56294 35.562946,35.562946 0 0 1 35.56294,35.56294 z"
+       id="Ball-2" />
+    <path
+       d="m 435.9814,203.92941 a 35.562946,35.562946 0 0 1 -35.56295,35.56295 35.562946,35.562946 0 0 1 -35.56294,-35.56295 35.562946,35.562946 0 0 1 35.56294,-35.56294 35.562946,35.562946 0 0 1 35.56295,35.56294 z"
+       id="Ball-1" />
+    <path
+       style="fill:none"
+       d="m 175.08238,211.34299 c 31.40869,-31.40867 74.79939,-50.83535 122.72743,-50.83535 47.92804,0 91.31873,19.42668 122.72742,50.83536"
+       id="Link" />
+  </g>
+  <path
+     id="Neutral Frame"
+     style="fill:none;stroke:#af0000;stroke-width:10;stroke-linejoin:miter;stroke-miterlimit:4"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   id="NATO Map Symbol"
+   height="400"
+   width="600">
+  <path
+     d="m 215.40054,292.5 c -51.4861,0 -93.22383,-41.01389 -93.22383,-92.5 0,-51.4861 41.73773,-92.5 93.22383,-92.5 h 169.19892 c 51.4861,0 93.22383,41.0139 93.22383,92.5 0,51.48611 -41.73773,92.5 -93.22383,92.5 z"
+     style="fill:none;stroke:#0000ff;stroke-width:10"
+     id="ARMOUR" />
+  <path
+     id="Wave" 
+     d="m 105,231.32886 c 31.6471,0 33.35292,-62.65772 65.00001,-62.65772 31.64711,0 33.36084,62.01615 65,62.65772 v 0 c 31.64711,0 33.35289,-62.65772 65.00001,-62.65772 31.64709,0 33.35289,62.65772 64.99999,62.65772 31.6471,0 33.35291,-62.65772 65,-62.65772 31.64711,0 33.3529,62.65772 64.99999,62.65772"
+     style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"/>
+  <g
+     id="Recov"
+     style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+  <path
+     id="Maint-0"
+     d="M 239.57574,344.88127 H 361.43195"/>
+  <path
+     id="Maint-1"
+     d="m 206.89204,313.20524 c 17.49418,0 31.67602,14.18184 31.67602,31.67603 0,17.49418 -14.18184,31.67602 -31.67602,31.67602"/>
+  <path
+     id="Maint-2"
+     d="m 393.10797,313.20524 c -17.49419,0 -31.67602,14.18184 -31.67602,31.67603 0,17.49418 14.18183,31.67602 31.67602,31.67602"/>
+  </g>
+  <path
+     id="Neutral Frame"
+     style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linejoin:miter;stroke-miterlimit:4"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

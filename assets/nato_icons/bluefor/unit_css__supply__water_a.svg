@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   id="NATO Map Symbol"
+   height="400"
+   width="600">
+  <path
+     style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linecap:butt"
+     d="M 105,303.79177 H 495"
+     id="Supply" />
+  <g
+     id="Water"
+	 style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4">
+    <path
+       d="m 134.3738,176.73749 224.87303,-0.91364 c 94.32592,0 106.39964,54.52624 106.39964,95.93339"
+       id="W1" />
+    <path
+       d="M 264.1547,176.21021 V 128.31397"
+       id="W2" />
+    <path
+       d="m 224.5378,144.7597 h 79.2338"
+       id="W3" />
+  </g>
+  <path
+     id="Neutral Frame"
+     style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linejoin:miter;stroke-miterlimit:4"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

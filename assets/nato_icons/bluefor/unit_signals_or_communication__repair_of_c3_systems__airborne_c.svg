@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   id="NATO Map Symbol"
+   height="400"
+   width="600">
+  <path
+     id="Sigs"
+     style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;"
+     d="M 495,395 300,160 v 80 L 105,5" />
+  <path
+     id="ABN"
+     d="m 185,357 c 0,0 35.45511,-32.13869 70,-31 39.3232,1.29621 45,41 45,41 0,0 4.74354,-39.62637 45,-41 40.25646,-1.37362 70,31 70,31"
+     style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4" />
+  <g
+     id="Repair"
+     style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4">
+  <path
+     id="Maint-0"
+     d="M 239.57574,55.11873 H 361.43195"/>
+  <path
+     id="Maint-1"
+     d="m 206.89204,86.79476 c 17.49418,0 31.67602,-14.18184 31.67602,-31.67603 0,-17.49418 -14.18184,-31.67602 -31.67602,-31.67602"/>
+  <path
+     id="Maint-2"
+     d="m 393.10797,86.79476 c -17.49419,0 -31.67602,-14.18184 -31.67602,-31.67603 0,-17.49418 14.18183,-31.67602 31.67602,-31.67602"/>
+  </g>
+  <path
+     id="Neutral Frame"
+     style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linejoin:miter;stroke-miterlimit:4"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

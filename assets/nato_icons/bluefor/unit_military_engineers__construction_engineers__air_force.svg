@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="600"
+   height="400"
+   id="NATO Map Symbol">
+  <path
+     d="M 300.00069,354.78853 299.46377,209.1583 M 147.61257,354.78853 V 209.1583 h 151.31496 151.31496 l 2.14632,145.63023"
+     style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:25.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="ENGR" />
+  <path
+     d="m 396.65639,54.034337 c 34.75175,-13.86787 82.89504,17.2689 82.89504,38.57118 0,21.302273 -48.14329,52.439043 -82.89504,38.571193 L 203.34362,54.034337 c -34.75174,-13.86787 -82.89505,17.2689 -82.89505,38.57118 0,21.302273 48.14331,52.439043 82.89505,38.571193 z"
+     id="AirForce"
+     style="color:#0000ff;display:inline;overflow:visible;visibility:visible;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate" />
+  <path
+     id="Neutral Frame"
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

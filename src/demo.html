@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+</head>
+
+<body>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-org-chart@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-flextree@2.0.0/build/d3-flextree.js"></script>
+    <div class="chart-container" style=" height:100% ;background-color:white"></div>
+
+    <script>
+        var chart;
+        d3.csv(
+            'output.csv'
+        ).then(dataFlattened => {
+            chart = new d3.OrgChart()
+                .container('.chart-container')
+                .data(dataFlattened) // https://gist.github.com/bumbeishvili/40fc87bdcdc4d7a1919e4cce2fed10f9
+                .nodeContent((data) => {
+                    return `
+                    <div style="border:1px solid black;text-align:center;">
+<div><img width="60px" src="${data.data.size}"/></div>
+<div><img width="100px" src="${data.data.symbol}" /></div>
+                    <h3 style="margin-bottom:0px;">${data.data.name}</h3>
+                    <span><strong>${data.data.commander}</strong></span>
+                    </div>`
+                })
+                .render();
+        });
+    </script>
+</body>
+
+</html>

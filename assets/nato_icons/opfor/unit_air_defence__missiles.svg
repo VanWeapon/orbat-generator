@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="NATO Map Symbol"
+   height="400"
+   width="600"
+   version="1.1">
+  <g
+     id="g3758"
+     transform="matrix(0.99341957,0,0,1.1394349,6.4134732,6.5553485)"
+     style="stroke-width:9.39915657;stroke-miterlimit:4;stroke-dasharray:none">
+    <path
+       d="M 256.52112,341.50709 V 143.68865 c 0,-21.9888 25.38256,-53.195633 39.01013,-53.195633 13.62756,0 39.01013,31.206833 39.01013,53.195633 v 197.81844"
+       id="path2986"
+       style="fill:none;stroke:#af0000;stroke-width:9.39915657;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       d="M 295.53125,92.140377 V 341.50709"
+       id="path2988"
+       style="fill:none;stroke:#af0000;stroke-width:9.39915657;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+  <path
+     id="AD Dome"
+     d="M 105,324.20354 C 105,190.77312 192.30446,82.606394 299.99999,82.606394 407.69553,82.606386 495,190.77312 495,324.20354"
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#af0000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="Neutral Frame"
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#af0000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

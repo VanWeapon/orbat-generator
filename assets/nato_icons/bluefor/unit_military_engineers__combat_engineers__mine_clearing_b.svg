@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   id="NATO Map Symbol"
+   height="400"
+   width="600">
+    <g
+       id="Mine"
+	   style="fill:#0000ff;stroke:#0000ff;stroke-width:10">
+      <path
+         d="m 350,88 c 0.007,20.78702 -29.21299,37.64205 -50,37.64205 -20.78701,0 -50.00743,-16.85501 -50,-37.642032 -0.007,-20.787027 29.21299,-37.642246 50,-37.642246 20.78701,0 50.00743,16.855201 50,37.642228 z" />
+      <path
+         d="m 265,29 70,118" />
+      <path
+         d="M 335,29 265,147" />
+      <path
+         d="M 300,20 V 160" />
+    </g>
+  <path
+     d="M 300,299 V 175 M 175,299 V 175 h 250 v 124"
+     style="fill:none;stroke:#0000ff;stroke-width:20;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4"
+     id="ENGR" />
+  <text
+     style="font-size:100px;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#0000ff;stroke:none"
+     id="S2"
+     y="380"
+     x="300">CLR</text>
+  <path
+     id="Neutral Frame"
+     style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linejoin:miter;stroke-miterlimit:4"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

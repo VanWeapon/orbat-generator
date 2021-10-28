@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   id="NATO Map Symbol"
+   height="400"
+   width="600">
+  <g
+     id="Tpt"
+     style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt">
+    <path
+       id="Wheel"
+       d="m 394.32926,258.822 a 94.329284,94.290644 0 1 1 -188.65855,0 94.329284,94.290644 0 1 1 188.65855,0 z" />
+    <path
+       id="Wheel-H"
+       d="M 205.67071,258.822 H 394.32925" />
+    <path
+       id="Wheel-D1"
+       d="M 233.29911,325.49555 366.70085,192.14846" />
+    <path
+       id="Wheel-V"
+       d="M 299.99999,164.53137 V 353.11264" />
+    <path
+       id="Wheel-D2"
+       d="M 233.29911,192.14846 366.70085,325.49555" />
+  </g>
+  <g
+     id="AirField">
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:8.86942291;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 175,133.59508 H 425"
+       id="Run-H" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 180.54923,236.38606 324.29673,30.804104"
+       id="Run-D" />
+  </g>
+  <path
+     id="Neutral Frame"
+     style="fill:none;stroke:#000000;stroke-width:10;stroke-linejoin:miter;stroke-miterlimit:4"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

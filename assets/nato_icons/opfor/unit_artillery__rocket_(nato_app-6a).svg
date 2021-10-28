@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   id="NATO Map Symbol"
+   height="400"
+   width="600">
+  <g
+     id="Rockets"
+	 style="fill:none;stroke:#af0000;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4">
+    <path
+       d="M 336,100 300,66 264,100" />
+    <path
+       d="M 300,344 V 66" />
+    <path
+       d="M 330,150 V 250" />
+    <path
+       d="M 270,150 V 250" />
+  </g>
+  <path
+     id="Neutral Frame"
+     style="fill:none;stroke:#af0000;stroke-width:10;stroke-linejoin:miter;stroke-miterlimit:4"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="180"
+   height="130"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <g
+     transform="matrix(2.386666,0,0,2.579998,-1.110335,-0.789951)"
+     id="layer1">
+    <rect
+       width="71.23011"
+       height="46.512623"
+       ry="0"
+       x="2.5596795"
+       y="2.2436907"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:black;stroke-width:4.02890635;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="GF" />
+    <path
+       d="M 26.260326,25.887599 C 48.161067,25.887599 48.161067,25.887599 48.161067,25.887599"
+       style="opacity:1;fill:black;fill-opacity:1;fill-rule:nonzero;stroke:black;stroke-width:3.23463464;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2770" />
+    <path
+       d="M 166.73585,63.499134 A 17.814705,25.296883 0 1 1 131.1473,61.16721"
+       transform="matrix(-3.267436e-2,0.63679,0.493014,2.093021e-2,-12.8229,-70.64924)"
+       style="opacity:1;color:black;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:black;stroke-width:5.74761629;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+       id="path3719" />
+    <path
+       d="M 166.73585,63.499134 A 17.814705,25.296883 0 1 1 131.1473,61.16721"
+       transform="matrix(3.267436e-2,0.63679,-0.493014,2.093021e-2,89.25613,-70.64924)"
+       style="opacity:1;color:black;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:black;stroke-width:5.74761629;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+       id="path3721" />
+  </g>
+</svg>

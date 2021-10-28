@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="180"
+   height="130"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.44.1"
+   sodipodi:docname="TZ PART.svg"
+   sodipodi:docbase="C:\Dokumente und Einstellungen\Aras\Desktop\Taktische Zeichen">
+  <metadata
+     id="metadata9">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:window-height="712"
+     inkscape:window-width="1024"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:zoom="7.7496327"
+     inkscape:cx="37.786688"
+     inkscape:cy="60.717723"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:current-layer="layer1"
+     showgrid="true" />
+  <defs
+     id="defs4" />
+  <g
+     transform="matrix(2.386666,0,0,2.579998,-1.110335,-0.789951)"
+     id="layer1"
+     style="fill:red">
+    <rect
+       width="71.23011"
+       height="46.512623"
+       ry="0"
+       x="2.5596795"
+       y="2.2436907"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:black;stroke-width:4.02890635;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="GF" />
+    <rect
+       width="46.927387"
+       height="16.279081"
+       ry="8.1395407"
+       x="14.711041"
+       y="18.329445"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:black;stroke-width:3.22392154;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect7279" />
+    <path
+       d="M 94.980617 68.023254 A 7.1802325 6.5503874 0 1 1  80.620152,68.023254 A 7.1802325 6.5503874 0 1 1  94.980617 68.023254 z"
+       transform="matrix(0.437654,0,0,0.443787,0.796011,-3.718865)"
+       style="opacity:1;color:black;fill:black;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+       id="path8254" />
+  </g>
+</svg>

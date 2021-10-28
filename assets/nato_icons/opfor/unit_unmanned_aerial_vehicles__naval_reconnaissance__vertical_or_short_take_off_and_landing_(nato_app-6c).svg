@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   width="600"
+   height="400"
+   id="NATO Map Symbol">
+  <path
+     id="Recce"
+	 style="fill:none;stroke:#af0000;stroke-width:10;stroke-linecap:butt"
+     d="M 495,5 105,395" />
+  <path
+     id="UAV"
+     style="fill:#af0000;stroke:#af0000;stroke-width:1.4px;stroke-linecap:butt;stroke-linejoin:miter"
+     d="M 300,276 115,140 V 124.4 L 300,184 485,124.4 V 140 Z" />
+  <g
+     id="Navy"
+	 style="fill:none;stroke:#af0000;stroke-width:10;stroke-miterlimit:4">
+    <path
+       id="N1"
+       d="m 300.50537,18.460153 c -4.44226,0 -8.04274,3.466765 -8.0414,7.738171 -0.002,4.271406 3.59914,7.738172 8.0414,7.738172 4.44227,0 8.04275,-3.466766 8.04141,-7.738172 0,-0.0012 0,-0.0024 0,-0.0036 0,-4.269773 -3.60037,-7.734614 -8.04141,-7.734614 z" />
+    <path
+       d="M 328.92701,85.238782 C 313.04271,101.12308 287.1406,100.9745 271.07303,84.906917"
+       id="N2" />
+    <path
+       d="M 300,35 V 95"
+       id="N3" />
+    <path
+       d="m 280,48 h 40"
+       id="N4" />
+    <path
+       d="m 267.2756,83.776292 3.43264,-3.697195 -4.53193,-1.506913 z"
+       id="N5" />
+    <path
+       d="m 332.7244,83.776292 -3.43265,-3.697195 4.53193,-1.506913 z"
+       id="N6" />
+  </g>
+  <text
+     style="font-size:95px;font-family:sans-serif;text-align:center;text-anchor:middle;fill:#af0000;stroke:none"
+     id="S2"
+     y="375"
+     x="300">VSTOL</text>
+  <path
+     id="Neutral Frame"
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#af0000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

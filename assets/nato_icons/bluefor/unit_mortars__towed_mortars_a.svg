@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   id="NATO Map Symbol"
+   height="400"
+   width="600">
+  <g
+     id="MOR"
+	 style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4">
+    <path
+       d="m 334,252 a 34,34 0 0 1 -34,34 34,34 0 0 1 -34,-34 34,34 0 0 1 34,-34 34,34 0 0 1 34,34 z" />
+    <path
+       d="M 300,217 V 67" />
+    <path
+       d="M 336,101 300,67 264,101" />
+  </g>
+  <g
+     id="Tow"
+	 style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4">
+    <path
+       d="m 441,301 a 34,34 0 0 1 -34,34 34,34 0 0 1 -34,-34 34,34 0 0 1 34,-34 34,34 0 0 1 34,34 z" />
+    <path
+       d="m 227,301 a 34,34 0 0 1 -34,34 34,34 0 0 1 -34,-34 34,34 0 0 1 34,-34 34,34 0 0 1 34,34 z" />
+    <path
+       d="M 373,301 H 227" />
+  </g>
+  <path
+     id="Neutral Frame"
+     style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linejoin:miter;stroke-miterlimit:4"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

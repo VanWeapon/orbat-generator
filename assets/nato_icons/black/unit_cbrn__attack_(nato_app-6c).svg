@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   id="NATO Map Symbol"
+   height="400"
+   width="600">
+  <text
+     style="fill:#000000;font-size:100px;font-family:sans-serif;text-align:center;text-anchor:middle;stroke:none"
+     id="S1"
+     y="93"
+     x="300">A</text>
+  <g
+     id="CBRN"
+	 style="fill:none;stroke:#000000;stroke-width:15;stroke-linecap:round;stroke-linejoin:round">
+    <path
+       d="m 234.42955,170.35285 c 5,-6 0,-33 -22,-48 -23,-15 -49,-17 -56,-5 -10,12 0,33 22,48 23,15 51,11 56,5 z m -41,-57 c 86,34 175,177 175,177" />
+    <path
+       d="m 365.57045,170.35285 c -5,-6 0,-33 22,-48 23,-15 49,-17 56,-5 10,12 0,33 -22,48 -23,15 -51,11 -56,5 z m 41,-57 c -86,34 -175,177 -175,177" />
+    <g
+        id="CBRN1"
+	    style="fill:#000000;stroke:none">
+	   <path
+          d="m 234.42955,170.35285 c 5,-6 0,-33 -22,-48 -23,-15 -49,-17 -56,-5 -10,12 0,33 22,48 23,15 51,11 56,5 z" />
+       <path
+          d="m 365.57045,170.35285 c -5,-6 0,-33 22,-48 23,-15 49,-17 56,-5 10,12 0,33 -22,48 -23,15 -51,11 -56,5 z" />
+    </g>
+  </g>
+  <path
+     id="Neutral Frame"
+     style="fill:none;stroke:#000000;stroke-width:10;stroke-linejoin:miter;stroke-miterlimit:4"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

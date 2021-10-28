@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   width="600"
+   height="400"
+   id="NATO Map Symbol">
+  <g
+     id="Radio"
+	 style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none">
+    <path
+       id="Base"
+       d="M 326.09181,246.71807 A 26.091814,26.091814 0 0 1 300,272.80988 26.091814,26.091814 0 0 1 273.90818,246.71807 26.091814,26.091814 0 0 1 300,220.62625 a 26.091814,26.091814 0 0 1 26.09181,26.09182 z" />
+    <path
+       id="Waves"
+       d="m 261.4998,148.75921 12.8334,-17.96677 12.8334,17.96677 12.8334,-17.96677 12.8334,17.96677 12.8334,-17.96677 12.8334,17.96677" />
+    <path
+       id="ANT"
+       d="M 300,220.62625 V 130.79244" />
+  </g>
+  <path
+     id="Neutral Frame"
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

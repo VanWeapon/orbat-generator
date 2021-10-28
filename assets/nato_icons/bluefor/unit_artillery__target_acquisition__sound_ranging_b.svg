@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="600"
+   height="400"
+   id="NATO Map Symbol">
+  <path
+     id="SensorM"
+     d="m 162.61864,147.47522 c 91.58757,0 183.17515,0 274.76272,0 l -68.69068,105.0741 H 231.30932 Z"
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:10;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="SensorL"
+     d="M 105.5,200 H 193"
+     style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:10;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <path
+     id="SensorR"
+     d="M 407,200 H 492.5"
+     style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:10;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:99.12418365px;line-height:111.00000143%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:2.6433115px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="267.30548"
+     y="235.48982"
+     id="Sound">S</text>
+  <path
+     style="fill:#0000ff;fill-opacity:1;stroke:#0000ff;stroke-width:10;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="path2987-3"
+     d="m 348.51514,322.82994 a 48.515147,48.515147 0 1 1 -97.03029,0 48.515147,48.515147 0 1 1 97.03029,0 z" />
+  <path
+     id="Neutral Frame"
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

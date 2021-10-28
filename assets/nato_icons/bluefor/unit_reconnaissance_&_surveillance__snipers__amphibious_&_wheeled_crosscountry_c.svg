@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   id="NATO Map Symbol"
+   height="400"
+   width="600">
+  <path
+     id="Recce"
+     style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linecap:butt"
+     d="M 495,5 105,395" />
+  <g
+     id="Sniper"
+	 style="stroke:#0000ff;stroke-width:10;stroke-linecap:butt">
+    <path
+       d="m 222,29 h 55" />
+    <path
+       d="M 322,29 h 55" />
+    <path
+       d="M 300,96 v -55" />
+  </g>
+  <path
+     id="Surv"
+     d="M 423.74368,287.49982 H 176.25631 L 300,112.49982 Z"
+     style="fill:#0000ff;stroke:#0000ff;stroke-width:10;stroke-linejoin:miter;stroke-miterlimit:10" />
+    <g
+       id="Wheeled"
+	   style="fill:none;stroke:#0000ff;stroke-width:10">
+      <path
+         id="Wheel-L"
+         d="m 250.28578,338.88127 a 31.357262,31.357262 0 1 1 -62.71451,0 31.357262,31.357262 0 1 1 62.71451,0 z" />
+      <path
+         id="Wheel-C"
+         d="m 331.35727,338.88127 a 31.357262,31.357262 0 1 1 -62.71452,0 31.357262,31.357262 0 1 1 62.71452,0 z" />
+      <path
+         id="Wheel-R"
+         d="m 412.42874,338.88127 a 31.357262,31.357262 0 1 1 -62.71452,0 31.357262,31.357262 0 1 1 62.71452,0 z" />
+    </g>
+  <path
+     id="Wave" 
+     d="m 105,231.32886 c 31.6471,0 33.35292,-62.65772 65.00001,-62.65772 31.64711,0 33.36084,62.01615 65,62.65772 v 0 c 31.64711,0 33.35289,-62.65772 65.00001,-62.65772 31.64709,0 33.35289,62.65772 64.99999,62.65772 31.6471,0 33.35291,-62.65772 65,-62.65772 31.64711,0 33.3529,62.65772 64.99999,62.65772"
+     style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linecap:butt;"/>
+  <path
+     id="Neutral Frame"
+     style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linejoin:miter;stroke-miterlimit:4"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>

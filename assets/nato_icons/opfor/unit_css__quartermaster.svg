@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   id="NATO Map Symbol"
+   height="400"
+   width="600">
+  <g
+     id="QM"
+	 style="fill:none;stroke:#af0000;stroke-width:10;stroke-linecap:square">
+    <path
+       d="m 476.84733,199.99994 c 0,27.2783 -13.1198,49.39185 -29.30389,49.39185 -16.18408,0 -29.30388,-22.11355 -29.30388,-49.39185 0,-27.27829 13.11979,-49.39172 29.30388,-49.39172 16.18409,-10e-6 29.30389,22.11343 29.30389,49.39172 z"
+       id="QM1" />
+    <path
+       d="M 417.41168,199.99994 H 120"
+       id="QM2" />
+    <path
+       d="m 132.6107,199.99994 v 49.39185"
+       id="QM3" />
+    <path
+       d="m 205.12224,199.99994 v 49.39185"
+       id="QM4" />
+    <path
+       d="m 132.6107,233.62841 h 72.51154"
+       id="QM5" />
+  </g>
+  <path
+     id="Neutral Frame"
+     style="fill:none;stroke:#af0000;stroke-width:10;stroke-linejoin:miter;stroke-miterlimit:4"
+     d="M 105,5 H 495 V 395 H 105 Z" />
+</svg>
