@@ -3,7 +3,6 @@ export type Rank = {
 	level: number;
 	abbreviation: string;
 };
-
 export const GENERAL: Rank = { name: "General", level: 1, abbreviation: "GEN" };
 export const LT_GENERAL: Rank = { name: "Lieutenant General", level: 1, abbreviation: "LTGEN" };
 export const MAJ_GENERAL: Rank = { name: "Major General", level: 1, abbreviation: "MAJGEN" };
