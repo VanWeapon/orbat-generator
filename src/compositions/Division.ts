@@ -30,11 +30,11 @@ export class Division extends Composition {
 
 	private generateBrigades() {
 		const defaultBrigades: Brigade[] = [];
-		defaultBrigades.push(new Brigade({ parentComposition: this, corps: "infantry" }));
-		defaultBrigades.push(new Brigade({ parentComposition: this, corps: "infantry" }));
-		defaultBrigades.push(new Brigade({ parentComposition: this, corps: "infantry" }));
-		defaultBrigades.push(new Brigade({ parentComposition: this, corps: "armour" }));
-		defaultBrigades.push(new Brigade({ parentComposition: this, corps: "reconnaissance" }));
+		defaultBrigades.push(new Brigade({ parentComposition: this, corps: "Infantry" }));
+		defaultBrigades.push(new Brigade({ parentComposition: this, corps: "Infantry" }));
+		defaultBrigades.push(new Brigade({ parentComposition: this, corps: "Infantry" }));
+		defaultBrigades.push(new Brigade({ parentComposition: this, corps: "Armour" }));
+		defaultBrigades.push(new Brigade({ parentComposition: this, corps: "Reconnaissance" }));
 		// this.childCompositions = defaultBrigades;
 	}
 

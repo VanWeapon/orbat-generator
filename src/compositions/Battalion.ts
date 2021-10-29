@@ -1,9 +1,8 @@
 import { Composition, CompositionParams } from "./Composition";
 import { COLONEL, LT_COLONEL, MAJOR, Rank } from "../data/ranks/Ranks";
 import { Brigade } from "./Brigade";
-import { Company, CompanyRole } from "./Company";
+import { Company } from "./Company";
 import Chance from "chance";
-import { HQElement } from "./HQElement";
 
 export type BattalionParams = CompositionParams & {
 	parentComposition: Brigade;
@@ -17,7 +16,6 @@ export class Battalion extends Composition {
 	name: string = "Battalion";
 	size = 60;
 
-	hqElement!: HQElement;
 	parentComposition!: Brigade;
 	childCompositions: Company[] = [];
 	constructor(params: BattalionParams) {

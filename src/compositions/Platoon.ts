@@ -1,7 +1,6 @@
 import { LIEUTENANT, Rank, SERGEANT } from "../data/ranks/Ranks";
-import { Company, CompanyRole } from "./Company";
+import { Company } from "./Company";
 import { Composition, CompositionParams, Modifier } from "./Composition";
-import { HQElement } from "./HQElement";
 import { Section } from "./Section";
 
 export type PlatoonSpecialisation =
@@ -34,7 +33,6 @@ export type PlatoonParams = CompositionParams & {
 	childCompositions?: Section[];
 	specialisation: PlatoonSpecialisation;
 	modifier?: Modifier;
-	HQElement?: HQElement;
 };
 
 export class Platoon extends Composition {
@@ -45,7 +43,6 @@ export class Platoon extends Composition {
 	size = 30;
 	parentComposition!: Company;
 	childCompositions: Section[] = [];
-	HQElement!: HQElement;
 
 	constructor(params: PlatoonParams) {
 		super(params);
@@ -82,13 +79,40 @@ export class Platoon extends Composition {
 			this.alignment = params.alignment;
 		}
 
-		if (!params.HQElement) {
-			// this.childCompositions.push(new HQElement());
-		} else {
-			this.HQElement = params.HQElement;
-		}
 		this.setDefaultSymbol();
 		this.setPlatoonSymbol();
+
+		if (!params.childCompositions) {
+			this.generateSections();
+		} else {
+			this.childCompositions = params.childCompositions;
+		}
+	}
+	public generateSections() {
+		this.childCompositions = [
+			new Section({
+				parentComposition: this,
+				name: "1-1",
+				alignment: this.alignment,
+				specialisation: this.specialisation
+			}),
+			new Section({
+				parentComposition: this,
+				name: "1-2",
+				alignment: this.alignment,
+				specialisation: this.specialisation
+			}),
+			new Section({
+				parentComposition: this,
+				name: "1-3",
+				alignment: this.alignment,
+				specialisation: this.specialisation
+			})
+		];
+	}
+
+	public addSection(inputSection: Section) {
+		this.childCompositions.push(inputSection);
 	}
 
 	private setPlatoonSymbol() {
@@ -135,7 +159,13 @@ export class Platoon extends Composition {
 				path = path.replace(/(unit)(.*?)(?=\.svg)/, "unit_special_operations_force");
 				break;
 			case "Sniper":
-				path = path.replace(/(unit)(.*?)(?=\.svg)/, "unit_sniper");
+				if (corps == "Infantry") {
+					path = path.replace(/(unit)(.*?)(?=\.svg)/, "unit_infantry__snipers_b");
+				} else if (corps == "Reconnaissance") {
+					path = path.replace(/(unit)(.*?)(?=\.svg)/, "unit_reconnaissance__snipers_c");
+				} else {
+					path = path.replace(/(unit)(.*?)(?=\.svg)/, "unit_sniper");
+				}
 				break;
 			case "Signals":
 				path = path.replace(/(unit)(.*?)(?=\.svg)/, "unit_signals_or_communication");

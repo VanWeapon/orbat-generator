@@ -4,20 +4,20 @@ import { Chance } from "chance";
 import { v4 } from "uuid";
 import fs from "fs";
 export type Corps =
-	| "infantry"
-	| "artillery"
-	| "armour"
-	| "cavalry"
-	| "reconnaissance"
-	| "sof"
-	| "hq"
-	| "engineer"
-	| "training"
-	| "support"
-	| "aviation"
-	| "rotary"
-	| "fixed_wing"
-	| "unknown";
+	| "Infantry"
+	| "Artillery"
+	| "Armour"
+	| "Cavalry"
+	| "Reconnaissance"
+	| "SOF"
+	| "HQ"
+	| "Engineer"
+	| "Training"
+	| "Support"
+	| "Aviation"
+	| "Rotary"
+	| "Fixed Wing"
+	| "Unknown";
 
 export type CompositionAlignment = "bluefor" | "opfor" | "civilian" | "neutral" | "unknown";
 
@@ -70,7 +70,7 @@ export abstract class Composition {
 		params?.commander ? (this.commander = params.commander) : this.generateCommander();
 		params?.commandXO ? (this.commandXO = params.commandXO) : this.generateXO();
 		params?.alignment ? (this.alignment = params.alignment) : (this.alignment = "unknown");
-		params?.corps ? (this.corps = params.corps) : (this.corps = "unknown");
+		params?.corps ? (this.corps = params.corps) : (this.corps = "Unknown");
 		params?.name ? (this.name = params.name) : this.name;
 		params?.symbol ? (this.symbol = params.symbol) : this.setDefaultSymbol();
 		params?.parentComposition
@@ -108,14 +108,14 @@ export abstract class Composition {
 	private setCompositionDefaults() {
 		this.generateCommander();
 		this.alignment = "unknown";
-		this.corps = "unknown";
+		this.corps = "Unknown";
 		this.parentComposition = null;
 	}
 
 	private generateCommander() {
 		this.commander = new Man({
-			name: new Chance().name({ gender: "male" }),
-			rank: this.commanderRank
+			rank: this.commanderRank,
+			role: "Officer"
 		});
 		this.setCommanderRank();
 	}
@@ -123,8 +123,8 @@ export abstract class Composition {
 	private generateXO() {
 		if (!this.commandXORank) return;
 		this.commandXO = new Man({
-			name: new Chance().name({ gender: "male" }),
-			rank: this.commandXORank
+			rank: this.commandXORank,
+			role: "Officer"
 		});
 		this.setCommanderRank();
 	}
@@ -160,37 +160,37 @@ export abstract class Composition {
 
 		var path = "/assets/nato_icons/" + alignment + "/";
 		switch (this.corps) {
-			case "infantry":
+			case "Infantry":
 				path += "unit_infantry";
 				break;
-			case "reconnaissance":
+			case "Reconnaissance":
 				path += "unit_reconnaissance";
 				break;
-			case "armour":
+			case "Armour":
 				path += "unit_armour";
 				break;
-			case "support":
+			case "Support":
 				path += "unit_css__supply";
 				break;
-			case "hq":
+			case "HQ":
 				path += "unit_headquarters_unit";
 				break;
-			case "engineer":
+			case "Engineer":
 				path += "unit_military_engineers";
 				break;
-			case "artillery":
+			case "Artillery":
 				path += "unit_artillery";
 				break;
-			case "cavalry":
+			case "Cavalry":
 				path += "unit_cavalry";
 				break;
-			case "aviation":
+			case "Aviation":
 				path += "unit_aviation_a";
 				break;
-			case "rotary":
+			case "Rotary":
 				path += "unit_aviation__rotary_wing_a";
 				break;
-			case "fixed_wing":
+			case "Fixed Wing":
 				path += "unit_aviation__fixed_wing_a";
 				break;
 			default:

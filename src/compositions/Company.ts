@@ -1,7 +1,6 @@
 import { CAPTAIN, MAJOR, Rank } from "../data/ranks/Ranks";
 import { Battalion } from "./Battalion";
 import { Composition, CompositionParams } from "./Composition";
-import { HQElement } from "./HQElement";
 import { Platoon } from "./Platoon";
 
 export type CompanyRole =
@@ -18,13 +17,11 @@ export type CompanyRole =
 export type CompanyParams = CompositionParams & {
 	parentComposition: Battalion;
 	childCompositions?: Platoon[];
-	HQElement?: HQElement;
 	role: CompanyRole;
 };
 export class Company extends Composition {
 	parentComposition!: Battalion;
 	childCompositions: Platoon[] = [];
-	HQElement!: HQElement;
 	commanderRank = MAJOR;
 	commandXORank = CAPTAIN;
 	size = 50;
@@ -57,11 +54,6 @@ export class Company extends Composition {
 		}
 		if (params.alignment) {
 			this.alignment = params.alignment;
-		}
-		if (!params.HQElement) {
-			// this.childCompositions.push(new HQElement());
-		} else {
-			this.HQElement = params.HQElement;
 		}
 
 		this.setDefaultSymbol();
