@@ -96,7 +96,29 @@ export class Section extends Composition {
 								this.men.push(new Man({ rank: PRIVATE, role: "Rifleman" }));
 								this.men.push(new Man({ rank: PRIVATE, role: "Rifleman" }));
 								break;
+							default:
+								this.commander.role = "Section Commander";
+								this.commandXO
+									? (this.commandXO.role = "Section 2IC")
+									: this.commandXO;
+								this.men.push(new Man({ rank: PRIVATE, role: "Gunner" }));
+								this.men.push(new Man({ rank: PRIVATE, role: "Gunner" }));
+								this.men.push(new Man({ rank: PRIVATE, role: "Grenadier" }));
+								this.men.push(new Man({ rank: PRIVATE, role: "Grenadier" }));
+								this.men.push(new Man({ rank: PRIVATE, role: "Rifleman" }));
+								this.men.push(new Man({ rank: PRIVATE, role: "Rifleman" }));
+								break;
 						}
+						break;
+					default:
+						this.commander.role = "Section Commander";
+						this.commandXO ? (this.commandXO.role = "Section 2IC") : this.commandXO;
+						this.men.push(new Man({ rank: PRIVATE, role: "Gunner" }));
+						this.men.push(new Man({ rank: PRIVATE, role: "Gunner" }));
+						this.men.push(new Man({ rank: PRIVATE, role: "Grenadier" }));
+						this.men.push(new Man({ rank: PRIVATE, role: "Grenadier" }));
+						this.men.push(new Man({ rank: PRIVATE, role: "Rifleman" }));
+						this.men.push(new Man({ rank: PRIVATE, role: "Rifleman" }));
 						break;
 				}
 				break;
