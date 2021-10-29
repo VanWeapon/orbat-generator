@@ -75,7 +75,11 @@ export class Section extends Composition {
 			this.corps = this.parentComposition.corps;
 		}
 		this.setDefaultSymbol();
+		this.setSectionSymbol();
 		this.generateMen();
+	}
+	private setSectionSymbol() {
+		this.symbol = this.parentComposition.symbol;
 	}
 
 	private generateMen() {
