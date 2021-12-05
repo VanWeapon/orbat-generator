@@ -1,4 +1,4 @@
-import { Composition, CompositionParams } from "./Composition";
+import { Composition, CompositionParams, Echelon, Lower, Main } from "./Composition";
 import { COLONEL, LT_COLONEL, MAJOR, Rank } from "../data/ranks/Ranks";
 import { Brigade } from "./Brigade";
 import { Company } from "./Company";
@@ -14,6 +14,9 @@ export class Battalion extends Composition {
 	commanderRank = LT_COLONEL;
 	commandXORank = COLONEL;
 	name: string = "Battalion";
+	echelon: Echelon = "battalion";
+	main: Main;
+	lower: Lower;
 	size = 60;
 
 	parentComposition!: Brigade;
@@ -30,16 +33,22 @@ export class Battalion extends Composition {
 			this.parentComposition.addBattalion.call(this.parentComposition, this);
 		}
 
-		if (params.corps) {
-			this.corps = params.corps;
+		if (params.main) {
+			this.main = params.main;
 		} else {
-			this.corps = this.parentComposition.corps;
+			this.main = this.parentComposition.main;
+		}
+
+		if (params.lower) {
+			this.lower = params.lower;
+		} else {
+			this.lower = this.parentComposition.lower;
 		}
 
 		if (params.alignment) {
 			this.alignment = params.alignment;
 		}
-		this.setDefaultSymbol();
+		this.symbol = this.getTex();
 
 		if (!params.childCompositions) {
 			this.generateCompanies();

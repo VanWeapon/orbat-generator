@@ -11,22 +11,32 @@
     <script src="https://cdn.jsdelivr.net/npm/d3-org-chart@2"></script>
     <script src="https://cdn.jsdelivr.net/npm/d3-flextree@2.0.0/build/d3-flextree.js"></script>
     <div class="chart-container" style=" height:100% ;background-color:white"></div>
-
+    <style>
+        .symbol-container {
+            background-image: url('https://raw.githubusercontent.com/VanWeapon/orbat-generator/main/assets/socomd4.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100px;
+            height: 100px;
+        }
+    </style>
     <script>
         var chart;
         d3.csv(
-            'output.csv'
+            'socomd.csv'
         ).then(dataFlattened => {
             chart = new d3.OrgChart()
                 .container('.chart-container')
-                .data(dataFlattened) // https://gist.github.com/bumbeishvili/40fc87bdcdc4d7a1919e4cce2fed10f9
+                .data(dataFlattened)
                 .nodeContent((data) => {
                     return `
-                    <div style="border:1px solid black;text-align:center;">
-<div><img width="60px" src="${data.data.size}"/></div>
-<div><img width="100px" src="${data.data.symbol}" /></div>
-                    <h3 style="margin-bottom:0px;">${data.data.name}</h3>
-                    <span><strong>${data.data.commander}</strong></span>
+                    <div class="orbat-box" style="text-align:center;">
+                        <div class="symbol-container">
+                            <div style="padding-top:4px"><img width="60px" src="${data.data.size}" /></div>
+                            <div><img width="90px" src="${data.data.symbol}" /></div>
+                        </div>
+                        <h3 style="margin-bottom:0px; margin-top:2px">${data.data.name}</h3>
+                        <span><strong>${data.data.commander}</strong></span>
                     </div>`
                 })
                 .render();

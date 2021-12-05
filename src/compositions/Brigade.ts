@@ -1,7 +1,7 @@
 import Chance from "chance";
 import { BRIGADIER, COLONEL, LT_COLONEL, MAJ_GENERAL } from "../data/ranks/Ranks";
 import { Battalion } from "./Battalion";
-import { Composition, CompositionParams, Corps } from "./Composition";
+import { Composition, CompositionParams, Echelon, Main } from "./Composition";
 import { Division } from "./Division";
 
 export type BrigadeParams = CompositionParams & {
@@ -13,10 +13,11 @@ export class Brigade extends Composition {
 	name = "Brigade";
 	commanderRank = BRIGADIER;
 	commandXORank = LT_COLONEL;
-	size = 70;
+	echelon: Echelon = "brigade";
 
 	parentComposition!: Division;
 	childCompositions: Battalion[] = [];
+	corpsNum: number = 1;
 	constructor(params: BrigadeParams) {
 		super(params);
 
@@ -32,12 +33,15 @@ export class Brigade extends Composition {
 			this.name = params.name;
 		}
 
-		if (params.corps) {
-			this.corps = params.corps;
+		if (params.main) {
+			this.main = params.main;
+		}
+		if (params.lower) {
+			this.lower = params.lower;
 		}
 
 		this.setCommanderRank();
-		this.setDefaultSymbol();
+		this.symbol = this.getTex();
 
 		// console.log(this);
 
@@ -59,27 +63,26 @@ export class Brigade extends Composition {
 		// );
 		let ordinal = this.getOrdinal();
 		new Battalion({
-			name: `${ordinal} ${Chance().capitalize(this.corps)} Battalion`,
+			name: `${ordinal} ${Chance().capitalize(this.main)} Battalion`,
 			parentComposition: this,
 			alignment: this.alignment
 		});
 		ordinal = this.getOrdinal();
 		new Battalion({
-			name: `${ordinal} ${Chance().capitalize(this.corps)} Battalion`,
+			name: `${ordinal} ${Chance().capitalize(this.main)} Battalion`,
 			parentComposition: this,
 			alignment: this.alignment
 		});
 		ordinal = this.getOrdinal();
 		new Battalion({
-			name: `${ordinal} ${Chance().capitalize(this.corps)} Battalion`,
+			name: `${ordinal} ${Chance().capitalize(this.main)} Battalion`,
 			parentComposition: this,
 			alignment: this.alignment
 		});
 	}
 	private getOrdinal() {
-		var corpsNum = this.parentComposition.countChildCorpsBtns(this.corps) + 1;
 		let ordinal = "";
-		switch (corpsNum) {
+		switch (this.corpsNum) {
 			case 1:
 				ordinal = "1st";
 				break;
@@ -90,9 +93,10 @@ export class Brigade extends Composition {
 				ordinal = "3rd";
 				break;
 			default:
-				ordinal = corpsNum + "th";
+				ordinal = this.corpsNum + "th";
 				break;
 		}
+		this.corpsNum++;
 		return ordinal;
 	}
 
@@ -102,7 +106,7 @@ export class Brigade extends Composition {
 
 	public displayDetails() {
 		var details = [];
-		details.push(" |- " + Chance().capitalize(this.corps) + " " + this.name);
+		details.push(" |- " + Chance().capitalize(this.main) + " " + this.name);
 		details.push("    Commanding Officer: " + this.commander.display());
 		// details.push("    Alignment: " + this.alignment);
 
@@ -114,9 +118,9 @@ export class Brigade extends Composition {
 		return details.join("\n");
 	}
 
-	public countCorpsBattalions(corps: Corps) {
+	public countCorpsBattalions(main: Main) {
 		if (this.childCompositions) {
-			var corpsBtns = this.childCompositions.filter((btn) => btn.corps == corps);
+			var corpsBtns = this.childCompositions.filter((btn) => btn.main == main);
 			return corpsBtns.length;
 		} else {
 			return 0;

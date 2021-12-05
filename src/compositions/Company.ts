@@ -1,6 +1,6 @@
 import { CAPTAIN, MAJOR, Rank } from "../data/ranks/Ranks";
 import { Battalion } from "./Battalion";
-import { Composition, CompositionParams } from "./Composition";
+import { Composition, CompositionParams, Lower, Main } from "./Composition";
 import { Platoon } from "./Platoon";
 
 export type CompanyRole =
@@ -24,6 +24,8 @@ export class Company extends Composition {
 	childCompositions: Platoon[] = [];
 	commanderRank = MAJOR;
 	commandXORank = CAPTAIN;
+	main: Main;
+	lower: Lower;
 	size = 50;
 	companyRole: CompanyRole = "Combat";
 
@@ -47,17 +49,22 @@ export class Company extends Composition {
 			this.alignment = params.parentComposition.alignment;
 			this.parentComposition.addCompany.call(this.parentComposition, this);
 		}
-		if (params.corps) {
-			this.corps = params.corps;
+		if (params.main) {
+			this.main = params.main;
 		} else {
-			this.corps = this.parentComposition.corps;
+			this.main = this.parentComposition.main;
+		}
+
+		if (params.lower) {
+			this.lower = params.lower;
+		} else {
+			this.lower = this.parentComposition.lower;
 		}
 		if (params.alignment) {
 			this.alignment = params.alignment;
 		}
 
-		this.setDefaultSymbol();
-		this.setCompanySymbol();
+		this.symbol = this.getTex();
 
 		if (!params.childCompositions) {
 			this.generatePlatoons();
@@ -68,44 +75,6 @@ export class Company extends Composition {
 
 	public addPlatoon(inputPlatoon: Platoon) {
 		this.childCompositions.push(inputPlatoon);
-	}
-
-	private setCompanySymbol() {
-		var alignment = this.alignment;
-		var corps = this.corps;
-		var role = this.companyRole;
-		var path = this.symbol;
-		if (role == "Combat") {
-			return;
-		}
-
-		switch (role) {
-			case "HQ":
-				path = path.replace(/(unit)(.*?)(?=\.svg)/, "unit_headquarters_unit");
-				break;
-			case "Artillery":
-				path = path.replace(/(unit)(.*?)(?=\.svg)/, "unit_artillery");
-				break;
-			case "Logistics":
-				path = path.replace(/(unit)(.*?)(?=\.svg)/, "unit_css__transport");
-				break;
-			case "Maintenance":
-				path = path.replace(/(unit)(.*?)(?=\.svg)/, "unit_css__maintenance");
-				break;
-			case "Medical":
-				path = path.replace(/(unit)(.*?)(?=\.svg)/, "unit_medical");
-				break;
-			case "Ordinance":
-				path = path.replace(/(unit)(.*?)(?=\.svg)/, "unit_css__ordinance");
-				break;
-			case "Supply":
-				path = path.replace(/(unit)(.*?)(?=\.svg)/, "unit_css__supply");
-				break;
-			case "Combat Support":
-				path = path.replace(/(unit)(.*?)(?=\.svg)/, "unit_combat_support_a");
-				break;
-		}
-		this.symbol = path;
 	}
 
 	private generatePlatoons() {
@@ -126,27 +95,27 @@ export class Company extends Composition {
 		new Platoon({
 			name: "Recon Platoon",
 			parentComposition: this,
-			specialisation: "Reconnaissance"
+			main: "reconnaissance"
 		});
 		new Platoon({
 			name: "1st Platoon",
 			parentComposition: this,
-			specialisation: "Core"
+			main: "infantry"
 		});
 		new Platoon({
 			name: "2nd Platoon",
 			parentComposition: this,
-			specialisation: "Core"
+			main: "infantry"
 		});
 		new Platoon({
 			name: "3rd Platoon",
 			parentComposition: this,
-			specialisation: "Core"
+			main: "infantry"
 		});
 		new Platoon({
 			name: this.name + " Headquarters",
 			parentComposition: this,
-			specialisation: "HQ"
+			main: "headquarters"
 		});
 	}
 
@@ -154,32 +123,32 @@ export class Company extends Composition {
 		new Platoon({
 			name: "Mortar Platoon",
 			parentComposition: this,
-			specialisation: "Mortar"
+			main: "mortar"
 		});
 		new Platoon({
 			name: "Recon Platoon",
 			parentComposition: this,
-			specialisation: "Reconnaissance"
+			main: "reconnaissance"
 		});
 		new Platoon({
 			name: "Anti-Tank Platoon",
 			parentComposition: this,
-			specialisation: "AT"
+			main: "anti tank"
 		});
 		new Platoon({
 			name: "Sniper Platoon",
 			parentComposition: this,
-			specialisation: "Sniper"
+			main: "sniper"
 		});
 		new Platoon({
 			name: "Combat Engineering Platoon",
 			parentComposition: this,
-			specialisation: "Engineer"
+			main: "engineer"
 		});
 		new Platoon({
 			name: this.name + " Headquarters",
 			parentComposition: this,
-			specialisation: "HQ"
+			main: "headquarters"
 		});
 	}
 
@@ -187,27 +156,27 @@ export class Company extends Composition {
 		new Platoon({
 			name: "Battalion Headquarters",
 			parentComposition: this,
-			specialisation: "HQ"
+			main: "headquarters"
 		});
 		new Platoon({
 			name: "Battalion Signals",
 			parentComposition: this,
-			specialisation: "Signals"
+			main: "signal"
 		});
 		new Platoon({
 			name: "Battalion Medical",
 			parentComposition: this,
-			specialisation: "Medical"
+			main: "medical"
 		});
 		new Platoon({
 			name: "Battalion Engineering",
 			parentComposition: this,
-			specialisation: "Engineer"
+			main: "engineer"
 		});
 		new Platoon({
 			name: "Battalion QStore",
 			parentComposition: this,
-			specialisation: "Quartermaster"
+			main: "quartermaster"
 		});
 	}
 

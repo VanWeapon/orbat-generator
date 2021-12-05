@@ -3,76 +3,144 @@ import { Man } from "../resources/Man";
 import { Chance } from "chance";
 import { v4 } from "uuid";
 import fs from "fs";
-export type Corps =
-	| "Infantry"
-	| "Artillery"
-	| "Armour"
-	| "Cavalry"
-	| "Reconnaissance"
-	| "SOF"
-	| "HQ"
-	| "Engineer"
-	| "Training"
-	| "Support"
-	| "Aviation"
-	| "Rotary"
-	| "Fixed Wing"
-	| "Unknown";
+
+export type Main =
+	| "administrative"
+	| "air defence"
+	| "air traffic services"
+	| "ammunition"
+	| "amphibious"
+	| "analysis"
+	| "anti tank"
+	| "armoured"
+	| "aviation fixed wing"
+	| "aviation rotary wing"
+	| "chemical biological radiological nuclear defence"
+	| "combat service support"
+	| "combat support"
+	| "combined arms"
+	| "corps support"
+	| "electronic ordinance disposal"
+	| "electronic warfare"
+	| "engineer"
+	| "field artillery observer"
+	| "field artillery"
+	| "headquarters"
+	| "individual"
+	| "infantry"
+	| "maintenance"
+	| "medical treatment facility"
+	| "medical"
+	| "military police"
+	| "mine"
+	| "missile"
+	| "mortar"
+	| "motorized"
+	| "naval"
+	| "ordnance"
+	| "quartermaster"
+	| "radar"
+	| "radio"
+	| "reconnaissance"
+	| "security"
+	| "self propelled field artillery"
+	| "signal"
+	| "sniper"
+	| "special forces"
+	| "special operations forces"
+	| "supply"
+	| "tactical mortar"
+	| "unmanned systems"
+	| "unknown";
 
 export type CompositionAlignment = "bluefor" | "opfor" | "civilian" | "neutral" | "unknown";
 
-export type Modifier =
-	| "Amphibious"
-	| "CBRN"
-	| "Motorised"
-	| "Mountain"
-	| "Naval"
-	| "Radar"
-	| "Radio"
-	| "Rail"
-	| "SIGINT"
-	| "Towed"
-	| "Tracked"
-	| "Video Imagery"
-	| "Wheeled and Tracked"
-	| "Wheeled"
+export type Lower =
+	| "airborne"
+	| "arctic"
+	| "bicycle equipped"
+	| "demolition"
+	| "heavy"
+	| "launcher"
+	| "light"
+	| "long range"
+	| "medium range"
+	| "mountain"
+	| "railroad"
+	| "riverine"
+	| "short range"
+	| "support"
+	| "tactical"
+	| "vertical of short takeoff and landing"
+	| "towed"
+	| "wheeled"
 	| "None";
+
+export type CommandArea =
+	| "Land"
+	| "Air"
+	| "SeaSurface"
+	| "Equipment"
+	| "SeaSubsurface"
+	| "Space"
+	| "Missile";
 
 export type CompositionParams = {
 	commander?: Man;
 	commandXO?: Man;
 	name?: string;
+	commandArea?: CommandArea;
 	alignment?: CompositionAlignment;
-	corps?: Corps;
+	main?: Main;
+	lower?: Lower;
 	parentComposition?: Composition | null;
 	childCompositions?: Composition[] | null;
 	symbol?: string | null;
 };
 
+export type Echelon =
+	| "team"
+	| "squad"
+	| "section"
+	| "platoon"
+	| "company"
+	| "battalion"
+	| "regiment"
+	| "brigade"
+	| "division"
+	| "corps"
+	| "army"
+	| "army group"
+	| "theatre"
+	| "command";
+
 export abstract class Composition {
 	public id: string = v4();
 	public name!: string;
 	public symbol!: string;
+	public commandArea!: CommandArea;
 	public alignment!: CompositionAlignment;
-	public corps!: Corps;
+	public main!: Main;
+	public lower!: Lower;
 	public commander!: Man;
 	public commanderRank!: Rank;
 	public commandXO?: Man;
 	public commandXORank?: Rank;
 	public parentComposition!: Composition | null;
 	public childCompositions!: Composition[] | null;
-	size?: number;
+	public echelon!: Echelon;
 	constructor(params?: CompositionParams) {
 		if (!params) {
 			this.setCompositionDefaults();
 		}
 
+		params?.commandArea ? (this.commandArea = params.commandArea) : (this.commandArea = "Land");
 		params?.commander ? (this.commander = params.commander) : this.generateCommander();
 		params?.commandXO ? (this.commandXO = params.commandXO) : this.generateXO();
 		params?.alignment ? (this.alignment = params.alignment) : (this.alignment = "unknown");
-		params?.corps ? (this.corps = params.corps) : (this.corps = "Unknown");
+		params?.main ? (this.main = params.main) : (this.main = "unknown");
 		params?.name ? (this.name = params.name) : this.name;
-		params?.symbol ? (this.symbol = params.symbol) : this.setDefaultSymbol();
+		params?.symbol ? (this.symbol = params.symbol) : (this.symbol = this.getTex());
 		params?.parentComposition
 			? (this.parentComposition = params.parentComposition)
 			: this.parentComposition;
@@ -83,13 +151,13 @@ export abstract class Composition {
 
 	public displayDetails() {
 		const details = [
-			new Chance().capitalize(this.corps) + " " + this.name,
+			new Chance().capitalize(this.main) + " " + this.name,
 			"Commanding Officer: " + this.commander.display(),
 			"Alignment: " + this.alignment
 		];
 		if (this.childCompositions) {
 			this.childCompositions.forEach((child) => {
-				details.push(new Chance().capitalize(child.corps) + " " + child.name);
+				details.push(new Chance().capitalize(child.main) + " " + child.name);
 				details.push("Commanding Officer: " + child.commander.display());
 				details.push("Alignment: " + child.alignment);
 			});
@@ -108,14 +176,14 @@ export abstract class Composition {
 	private setCompositionDefaults() {
 		this.generateCommander();
 		this.alignment = "unknown";
-		this.corps = "Unknown";
+		this.main = "unknown";
 		this.parentComposition = null;
 	}
 
 	private generateCommander() {
 		this.commander = new Man({
 			rank: this.commanderRank,
-			role: "Officer"
+			equipment: "rifle"
 		});
 		this.setCommanderRank();
 	}
@@ -124,81 +192,41 @@ export abstract class Composition {
 		if (!this.commandXORank) return;
 		this.commandXO = new Man({
 			rank: this.commandXORank,
-			role: "Officer"
+			equipment: "rifle"
 		});
 		this.setCommanderRank();
 	}
 
-	public writeCSV() {
-		var csv = [];
-
-		var sizeSymbol =
-			"/assets/nato_icons/size/" + this.alignment + "_0" + this.size?.toString() + ".svg";
-
-		csv.push(
-			[
-				this.name,
-				this.alignment,
-				this.corps,
-				this.commander.rank.abbreviation + " " + this.commander.name,
-				this.symbol || "unknown",
-				this.id,
-				this.parentComposition?.id || "",
-				sizeSymbol || ""
-			].join(",")
-		);
-		this.childCompositions?.forEach((comp) => {
-			comp.writeCSV();
-		});
-		fs.appendFileSync("src/output.csv", csv.join(",") + ",\n");
-	}
-
-	public setDefaultSymbol() {
-		var alignment;
-		if (this.alignment == "unknown") alignment = "black";
-		else alignment = this.alignment;
-
-		var path = "/assets/nato_icons/" + alignment + "/";
-		switch (this.corps) {
-			case "Infantry":
-				path += "unit_infantry";
+	public getTex() {
+		var main = this.main;
+		var type = "Mil";
+		var area = this.commandArea;
+		let faction = "unknown";
+		switch (this.alignment) {
+			case "bluefor":
+				faction = "friendly";
 				break;
-			case "Reconnaissance":
-				path += "unit_reconnaissance";
+			case "opfor":
+				faction = "enemy";
 				break;
-			case "Armour":
-				path += "unit_armour";
+			case "neutral":
+			case "civilian":
+				faction = "neutral";
 				break;
-			case "Support":
-				path += "unit_css__supply";
-				break;
-			case "HQ":
-				path += "unit_headquarters_unit";
-				break;
-			case "Engineer":
-				path += "unit_military_engineers";
-				break;
-			case "Artillery":
-				path += "unit_artillery";
-				break;
-			case "Cavalry":
-				path += "unit_cavalry";
-				break;
-			case "Aviation":
-				path += "unit_aviation_a";
-				break;
-			case "Rotary":
-				path += "unit_aviation__rotary_wing_a";
-				break;
-			case "Fixed Wing":
-				path += "unit_aviation__fixed_wing_a";
-				break;
-			default:
-				path += "unit_unspecified_or_composite_all-arms_a";
+			case "unknown":
+				faction = "unknown";
 				break;
 		}
-		path += ".svg";
+		var echelon = this.echelon;
 
-		this.symbol = path;
+		var contentStringStart = `\\${type}${area}[faction=${faction}, echelon=${echelon}, main=${main}`;
+		if (this.lower != "None") {
+			contentStringStart += ", lower=" + this.lower;
+		}
+		var contentStringEnd = `, scale=1]`;
+
+		var contentString = contentStringStart + contentStringEnd;
+
+		return contentString;
 	}
 }

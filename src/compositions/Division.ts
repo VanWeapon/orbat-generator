@@ -1,4 +1,4 @@
-import { Composition, CompositionParams, Corps } from "./Composition";
+import { Composition, CompositionParams, Echelon, Main } from "./Composition";
 import { BRIGADIER, LT_GENERAL, MAJ_GENERAL, Rank } from "../data/ranks/Ranks";
 import { Brigade, BrigadeParams } from "./Brigade";
 import { Man } from "../resources/Man";
@@ -9,7 +9,7 @@ type DivisionParams = CompositionParams & { childCompositions?: Brigade[] };
 export class Division extends Composition {
 	name = "Division";
 	commanderRank = MAJ_GENERAL;
-	size = 90;
+	echelon: Echelon = "division";
 
 	childCompositions: Brigade[] = [];
 	constructor(params: DivisionParams) {
@@ -22,7 +22,7 @@ export class Division extends Composition {
 		}
 		this.setCommanderRank();
 
-		this.setDefaultSymbol();
+		this.symbol = this.getTex();
 		if (!params.childCompositions) {
 			this.generateBrigades();
 		}
@@ -30,11 +30,11 @@ export class Division extends Composition {
 
 	private generateBrigades() {
 		const defaultBrigades: Brigade[] = [];
-		defaultBrigades.push(new Brigade({ parentComposition: this, corps: "Infantry" }));
-		defaultBrigades.push(new Brigade({ parentComposition: this, corps: "Infantry" }));
-		defaultBrigades.push(new Brigade({ parentComposition: this, corps: "Infantry" }));
-		defaultBrigades.push(new Brigade({ parentComposition: this, corps: "Armour" }));
-		defaultBrigades.push(new Brigade({ parentComposition: this, corps: "Reconnaissance" }));
+		defaultBrigades.push(new Brigade({ parentComposition: this, main: "infantry" }));
+		defaultBrigades.push(new Brigade({ parentComposition: this, main: "infantry" }));
+		defaultBrigades.push(new Brigade({ parentComposition: this, main: "infantry" }));
+		defaultBrigades.push(new Brigade({ parentComposition: this, main: "armoured" }));
+		defaultBrigades.push(new Brigade({ parentComposition: this, main: "reconnaissance" }));
 		// this.childCompositions = defaultBrigades;
 	}
 
@@ -63,7 +63,7 @@ export class Division extends Composition {
 		return details.join("\n");
 	}
 
-	public countChildCorpsBtns(corps: Corps) {
+	public countChildCorpsBtns(corps: Main) {
 		var count = 0;
 		this.childCompositions.forEach((bde) => {
 			count += bde.countCorpsBattalions(corps);
