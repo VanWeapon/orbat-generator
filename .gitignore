@@ -1,1 +1,5 @@
 node_modules
+assets/latex/*.aux
+assets/latex/*.log
+assets/latex/*.out
+assets/latex/*.pdf
