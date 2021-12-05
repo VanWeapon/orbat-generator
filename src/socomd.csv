@@ -1,5 +1,5 @@
 name,alignment,corps,commander,symbol,id,parentId,size
-SOCOMD,bluefor,Special Forces,,/assets/nato_icons/black/unit_aa__socomd.svg,999,,/assets/nato_icons/size/company_group.svg,
+SOCOMD,bluefor,Special Forces,MAJ Token,/assets/nato_icons/black/unit_aa__socomd.svg,999,,/assets/nato_icons/size/company_group.svg,
 Sabre,bluefor,Special Forces,CAPT ToxicSpare,/assets/nato_icons/black/unit_headquarters_unit_(nato_app-6).svg,1,999,/assets/nato_icons/size/company.svg,
 Phantom,bluefor,Special Forces,LT Romeo Mike,/assets/nato_icons/black/unit_commando.svg,2,1,/assets/nato_icons/size/platoon.svg,
 Raider,bluefor,Special Forces,LT Rapzik,/assets/nato_icons/black/unit_commando.svg,3,1,/assets/nato_icons/size/platoon.svg,
