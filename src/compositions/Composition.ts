@@ -3,87 +3,21 @@ import { Man } from "../resources/Man";
 import { Chance } from "chance";
 import { v4 } from "uuid";
 import fs from "fs";
+import {
+	MilSymbArea,
+	MilSymbEchelon,
+	MilSymbFaction,
+	MilSymbLower,
+	MilSymbMain
+} from "../latex-gen";
 
-export type Main =
-	| "administrative"
-	| "air defence"
-	| "air traffic services"
-	| "ammunition"
-	| "amphibious"
-	| "analysis"
-	| "anti tank"
-	| "armoured"
-	| "aviation fixed wing"
-	| "aviation rotary wing"
-	| "chemical biological radiological nuclear defence"
-	| "combat service support"
-	| "combat support"
-	| "combined arms"
-	| "corps support"
-	| "electronic ordinance disposal"
-	| "electronic warfare"
-	| "engineer"
-	| "field artillery observer"
-	| "field artillery"
-	| "headquarters"
-	| "individual"
-	| "infantry"
-	| "maintenance"
-	| "medical treatment facility"
-	| "medical"
-	| "military police"
-	| "mine"
-	| "missile"
-	| "mortar"
-	| "motorized"
-	| "naval"
-	| "ordnance"
-	| "quartermaster"
-	| "radar"
-	| "radio"
-	| "reconnaissance"
-	| "security"
-	| "self propelled field artillery"
-	| "signal"
-	| "sniper"
-	| "special forces"
-	| "special operations forces"
-	| "supply"
-	| "tactical mortar"
-	| "unmanned systems"
-	| "unknown";
+export type Main = MilSymbMain;
 
-export type CompositionAlignment = "bluefor" | "opfor" | "civilian" | "neutral" | "unknown";
+export type CompositionAlignment = MilSymbFaction;
 
-export type Lower =
-	| "airborne"
-	| "arctic"
-	| "bicycle equipped"
-	| "demolition"
-	| "heavy"
-	| "launcher"
-	| "light"
-	| "long range"
-	| "medium range"
-	| "mountain"
-	| "railroad"
-	| "riverine"
-	| "short range"
-	| "support"
-	| "tactical"
-	| "vertical of short takeoff and landing"
-	| "towed"
-	| "wheeled"
-	| "None";
+export type Lower = MilSymbLower;
 
-export type CommandArea =
-	| "Land"
-	| "Air"
-	| "SeaSurface"
-	| "Equipment"
-	| "SeaSubsurface"
-	| "Space"
-	| "Missile";
+export type CommandArea = MilSymbArea;
 
 export type CompositionParams = {
 	commander?: Man;
@@ -98,21 +32,7 @@ export type CompositionParams = {
 	symbol?: string | null;
 };
 
-export type Echelon =
-	| "team"
-	| "squad"
-	| "section"
-	| "platoon"
-	| "company"
-	| "battalion"
-	| "regiment"
-	| "brigade"
-	| "division"
-	| "corps"
-	| "army"
-	| "army group"
-	| "theatre"
-	| "command";
+export type Echelon = MilSymbEchelon;
 
 export abstract class Composition {
 	public id: string = v4();
@@ -201,22 +121,8 @@ export abstract class Composition {
 		var main = this.main;
 		var type = "Mil";
 		var area = this.commandArea;
-		let faction = "unknown";
-		switch (this.alignment) {
-			case "bluefor":
-				faction = "friendly";
-				break;
-			case "opfor":
-				faction = "enemy";
-				break;
-			case "neutral":
-			case "civilian":
-				faction = "neutral";
-				break;
-			case "unknown":
-				faction = "unknown";
-				break;
-		}
+		let faction = this.alignment;
+
 		var echelon = this.echelon;
 
 		var contentStringStart = `\\${type}${area}[faction=${faction}, echelon=${echelon}, main=${main}`;
